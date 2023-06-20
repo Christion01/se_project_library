@@ -43,7 +43,7 @@
 }
 
 .nav__link {
-  color: #000000;
+  color: #000;
   text-decoration: none;
   font-weight: bold;
   margin: 8px 0 0;
@@ -386,12 +386,8 @@
   z-index: 1;
 }
 
-.about__content:last-of-type {
-  margin: 0;
-}
 .about__paragraph {
-  margin-bottom: 32px;
-  margin-left: 120px;
+  margin: 32px 0 0;
 }
 .about__paragraph:last-of-type {
   margin-bottom: 0;
