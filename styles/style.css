@@ -31,7 +31,6 @@
 .nav__logo {
   height: 60px;
   width: 196px;
-  display: flex;
 }
 
 .nav__links {
@@ -192,31 +191,26 @@
 }
 
 .person_name_feynman {
-  position: absolute;
   top: -30px;
   left: 319px;
 }
 
 .person_name_burbidge {
-  position: absolute;
   top: 96px;
   right: 125px;
 }
 
 .person_name_cannon {
-  position: absolute;
   bottom: 18px;
   right: 216px;
 }
 
 .person_name_mitchell {
-  position: absolute;
   bottom: 82px;
   left: 142px;
 }
 
 .person_name_tarter {
-  position: absolute;
   top: 79px;
   left: 159px;
 }
@@ -244,7 +238,8 @@
 }
 .staff {
   padding: 100px 0 140px;
-  background-image: url(/images/staff_picks_background.jpg);
+  background-image: url(../images/staff_picks_background.jpg);
+  background-size: cover;
 }
 
 .staff__title {
@@ -267,14 +262,14 @@
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
 .staff__cards {
   max-width: 760px;
-  margin-top: 40px;
+  margin: 68px auto 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   /* Not centering cards */
   gap: 40px;
   list-style-type: none;
-  padding: 0%;
+  padding: 0;
 }
 
 .card {
@@ -334,7 +329,7 @@
   margin: 100px 0 0;
   gap: 40px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   /* Add styles */
 }
 
@@ -388,12 +383,18 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  margin-bottom: 32px;
   z-index: 1;
 }
 
 .about__content:last-of-type {
   margin: 0;
+}
+.about__paragraph {
+  margin-bottom: 32px;
+  margin-left: 120px;
+}
+.about__paragraph:last-of-type {
+  margin-bottom: 0;
 }
 
 .about__circle {
@@ -473,4 +474,5 @@
 .footer__copyright {
   color: #ffffff;
   margin-top: 108px;
+  margin-bottom: 0;
 }
